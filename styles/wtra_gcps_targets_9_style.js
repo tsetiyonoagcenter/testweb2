@@ -6,7 +6,7 @@ var style_wtra_gcps_targets_9 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
-    
+
     var labelText = ""; var value = feature.get("");
     var labelFont = "13.0px \'Open Sans\', sans-serif";
     var labelFill = "#323232";
@@ -17,7 +17,7 @@ var style_wtra_gcps_targets_9 = function(feature, resolution){
     var offsetY = 0;
     var placement = 'point';
     if (feature.get("id") !== null) {
-        labelText = String(feature.get("id"));
+        labelText = String('Test');
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
